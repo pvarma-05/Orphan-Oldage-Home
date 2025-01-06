@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Outfit, Poppins, Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const outfit = Outfit({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -28,10 +29,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scrollbar-thin scrollbar-thumb-[#A0FFBA] scrollbar-track-[#263238] ">
+    <html lang="en" className="scrollbar-thin scrollbar-thumb-[#F9F6E6] scrollbar-track-[#578E7E] ">
       <body className={`${outfit.variable} ${poppins.variable} ${inter.variable} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
