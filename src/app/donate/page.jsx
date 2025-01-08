@@ -7,13 +7,12 @@ export default function About() {
     return (
         <main>
             <section className='flex flex-col justify-center items-center h-[112vh] mx-32'>
-                <div className='flex flex-col gap-10 justify-between'>
-                    <div className='flex'>
+                <div className='flex justify-between'>
+                    <div className='flex flex-col  justify-center items-center gap-10'>
                         <h1 className='text-5xl font-outfit font-semibold'>
-                            Gallery
+                            Donate Now
                         </h1>
                     </div>
-
                 </div>
             </section>
         </main>

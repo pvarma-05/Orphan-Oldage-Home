@@ -14,8 +14,8 @@ export default function Home() {
             </h1>
             <p className='text-xl font-poppins text-gray-700'>Join us in creating a nurturing environment for orphans.</p>
             <div className='flex gap-5'>
-              <Link className='p-5 bg-[#ccddd8] text-black  font-medium font-outfit text-2xl  rounded-xl ' href={"/about"}>Learn More</Link>
-              <Link className='p-5 bg-[#578E7E] text-white font-medium font-outfit text-2xl  rounded-xl ' href={"/donations"}>Donate Now</Link>
+              <Link className='p-5 bg-[#ccddd8] text-black  font-medium font-outfit text-2xl  rounded-xl hover:bg-gray-700 hover:text-white transition ' href={"/about"}>Learn More</Link>
+              <Link className='p-5 bg-[#578E7E] text-white font-medium font-outfit text-2xl  rounded-xl hover:bg-[#466f65] transition ' href={"/donate"}>Donate Now</Link>
             </div>
           </div>
           <div className='flex w-1/2'>
@@ -25,6 +25,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className='flex flex-col justify-center items-center h-[112vh] mx-32'>
         <div className='flex justify-between bg-[#578E7E] rounded-lg p-10'>
           <div className='flex w-1/2'>
@@ -53,14 +54,15 @@ export default function Home() {
               “Together, we can create a world where everyone belongs.” – [Founder’s Name]
             </p>
             <Link
-              className='self-start mt-5 p-3 bg-[#ccddd8] text-black font-medium font-outfit text-xl rounded-lg'
+              className='self-start mt-5 p-3 bg-[#ccddd8] text-black font-medium font-outfit text-xl rounded-lg hover:bg-gray-700 hover:text-white transition'
               href={"/contact"}
             >
-              Contact Me
+              Contact
             </Link>
           </div>
         </div>
       </section>
+
       <section className='flex flex-col justify-center items-center h-[112vh] mx-32'>
         <div className='flex justify-between'>
           <div className='flex flex-col w-1/2 justify-center gap-10'>
@@ -75,7 +77,7 @@ export default function Home() {
             </p>
             <div className='flex gap-5'>
               <Link
-                className='p-5 bg-[#578E7E] text-white font-medium font-outfit text-2xl rounded-xl'
+                className='p-5 bg-[#578E7E] text-white font-medium font-outfit text-2xl rounded-xl hover:bg-[#466f65] transition'
                 href={"/about"}
               >
                 Learn More
@@ -96,10 +98,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className='flex flex-col justify-center items-center h-[112vh] mx-32 gap-10'>
         <h2 className='text-4xl font-outfit font-semibold mb-10'>Our Facilities and Activities</h2>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mx-32'>
-          <div className='flex flex-col items-center bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mx-32 w-full'>
+          <div className='flex flex-col items-left bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
             <Image
               width={300}
               height={200}
@@ -113,7 +116,7 @@ export default function Home() {
               We provide clean, safe, and comfortable living accommodations designed to offer a homely environment for our residents.
             </p>
           </div>
-          <div className='flex flex-col items-center bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
+          <div className='flex flex-col items-left bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
             <Image
               width={300}
               height={200}
@@ -128,7 +131,7 @@ export default function Home() {
               Our home features dedicated recreational spaces where residents can relax, play games, and enjoy social activities.
             </p>
           </div>
-          <div className='flex flex-col items-center bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
+          <div className='flex flex-col items-left bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
             <Image
               width={300}
               height={200}
@@ -144,9 +147,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className='flex flex-col justify-center items-center h-[100vh] mx-32 gap-10'>
         <h2 className='text-4xl font-outfit font-semibold mb-10'>Voices of Gratitude</h2>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mx-32'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mx-32 w-full'>
           <div className='flex flex-col items-center bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
             <Image
               width={100}
