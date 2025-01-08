@@ -1,46 +1,36 @@
-![](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# 👋 Hello, I'm Pradeep Varma!
+## Getting Started
 
-### 🚀 About Me
-- 👨‍🎓 **Pre-Final year student** at **GITAM University Vizag**.  
-- 💻 **Full-Stack Developer** with hands-on experience in modern web technologies.  
-- 🛡️ Knowledgeable in **Cybersecurity**, focused on building secure and robust applications.  
-- 📚 Passionate about continuous learning and applying skills through hands-on projects.  
+First, run the development server:
 
----
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### 👨🏻‍💻 I Work on These:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-#### 🛠️ Tech Stack
-[![Tech Stack](https://skillicons.dev/icons?i=c,py,java,html,css,js,react,nextjs,nodejs,express,mongodb,postgres,mysql,tailwind,bootstrap,materialui,jquery,vite)](https://skillicons.dev)
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-#### ⚙️ Tools
-[![Tools](https://skillicons.dev/icons?i=git,github,figma,vscode,vercel,postman,npm,kali,bash,linux,windows,cloudflare,notion,md)](https://skillicons.dev)
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
----
+## Learn More
 
-### 📫 Let's Connect
-Feel free to reach out and connect with me!  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/pvarma5/)  
-[![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=flat&logo=aboutdotme&logoColor=white)](https://pvarma.vercel.app)  
-📧 Email: [spvpenumatsa2@gmail.com](mailto:spvpenumatsa2@gmail.com)
+To learn more about Next.js, take a look at the following resources:
 
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### 📊 My Stats
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-<br>
+## Deploy on Vercel
 
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=pvarma-05&show_icons=true&theme=radical" alt="GitHub Stats"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pvarma-05&layout=compact&theme=radical" alt="Top Languages"/>
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=pvarma-05&theme=radical" alt="GitHub Streak"/>
-</div>
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-<!-- #### Activity Graph -->
-<br>
-
-[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=pvarma-05&theme=radical)](https://github.com/pvarma-05)
-
-![](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
