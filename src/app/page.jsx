@@ -46,11 +46,11 @@ export default function Home() {
               Our founder, [Founder’s Name], envisioned a sanctuary where orphans and the elderly could find solace, care, and love.
               Inspired by personal experiences and a deep sense of empathy, they started this home to create a family for those without one.
             </p>
-            <p className='text-lg font-poppins'>
+            <p className='lg:text-lg sm:text-base font-poppins'>
               With relentless dedication and a compassionate team, [Founder’s Name] has transformed lives, creating a brighter future
               for hundreds of residents. They believe that no one should feel abandoned or alone, and this home is a testament to that vision.
             </p>
-            <p className='text-lg font-poppins'>
+            <p className='lg:text-lg sm:text-base font-poppins'>
               “Together, we can create a world where everyone belongs.” – [Founder’s Name]
             </p>
             <Link
