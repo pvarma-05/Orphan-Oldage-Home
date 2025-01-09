@@ -29,7 +29,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scrollbar-thin scrollbar-thumb-[#F9F6E6] scrollbar-track-[#578E7E] ">
+    <html lang="en" className="scrollbar-thin scrollbar-thumb-[#578E7E] scrollbar-track-current ">
       <body className={`${outfit.variable} ${poppins.variable} ${inter.variable} antialiased`}>
         <Navbar />
         {children}

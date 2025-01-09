@@ -25,7 +25,7 @@ export default function Navbar() {
                 {/* Logo Section */}
                 <div className='flex items-center gap-3'>
                     <Image width={60} height={60} alt='Logo' src={"/logo.svg"} draggable={false} />
-                    <h1 className='text-[25px] font-medium font-outfit text-white'>Orphan Oldage Home</h1>
+                    <h1 className='sm:text-2lg lg:text-[25px] font-medium font-outfit text-white'>Orphan Oldage Home</h1>
                 </div>
 
                 {/* Hamburger Menu for Small & Medium Devices */}

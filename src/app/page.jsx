@@ -6,16 +6,16 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main>
-      <section className='flex flex-col justify-center items-center sm:h-[110vh] lg:mx-32 sm:mx-10'>
+      <section className='flex flex-col justify-center items-center sm:h-[110vh] lg:mx-32 sm:mx-5'>
         <div className='flex items-center lg:justify-between sm:flex-col-reverse lg:flex-row w-full'>
-          <div className='flex flex-col sm:w-full lg:w-1/2 justify-center gap-10'>
-            <h1 className='text-5xl font-outfit font-semibold'>
+          <div className='flex flex-col sm:w-full lg:w-1/2 justify-center sm:gap-5 lg:gap-10'>
+            <h1 className='sm:text-3xl lg:text-5xl font-outfit font-semibold'>
               Caring For the Abandoned Building a Loving Home
             </h1>
-            <p className='text-xl font-poppins text-gray-700'>Join us in creating a nurturing environment for orphans.</p>
+            <p className='sm:text-lg lg:text-xl font-poppins text-gray-700'>Join us in creating a nurturing environment for orphans.</p>
             <div className='flex gap-5'>
-              <Link className='p-5 bg-[#ccddd8] text-black  font-medium font-outfit text-2xl  rounded-xl hover:bg-gray-700 hover:text-white transition ' href={"/about"}>Learn More</Link>
-              <Link className='p-5 bg-[#578E7E] text-white font-medium font-outfit text-2xl  rounded-xl hover:bg-[#466f65] transition ' href={"/donate"}>Donate Now</Link>
+              <Link className='p-5 bg-[#ccddd8] text-black  font-medium font-outfit sm:text-xl lg:text-2xl  rounded-xl hover:bg-gray-700 hover:text-white transition ' href={"/about"}>Learn More</Link>
+              <Link className='p-5 bg-[#578E7E] text-white font-medium font-outfit sm:text-xl lg:text-2xl  rounded-xl hover:bg-[#466f65] transition ' href={"/donate"}>Donate Now</Link>
             </div>
           </div>
           <div className='flex w-1/2'>
@@ -26,8 +26,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center sm:h-[100vh] lg:mx-32 sm:mx-10'>
-        <div className='flex lg:justify-between sm:justify-center sm:flex-col lg:flex-row sm:items-center gap-10 bg-[#578E7E] rounded-lg p-10'>
+      <section className='flex flex-col justify-center items-center sm:h-[170vh] lg:h-[120vh] lg:mx-32 sm:mx-0'>
+        <div className='flex lg:justify-between sm:justify-center sm:flex-col lg:flex-row sm:items-center sm:gap-5 lg:gap-10 bg-[#578E7E] rounded-lg p-10'>
           <div className='flex sm:w-full lg:w-1/2'>
             <div className='flex justify-center w-full'>
               <Image
@@ -63,21 +63,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center sm:h-[100vh] lg:mx-32 sm:mx-10'>
+      <section className='flex flex-col justify-center items-center sm:h-[150vh] lg:h-[120vh] lg:mx-32 sm:mx-5'>
         <div className='flex lg:justify-between sm:justify-center sm:flex-col-reverse sm:items-center lg:flex-row'>
           <div className='flex flex-col sm:w-full lg:w-1/2 justify-center gap-10'>
-            <h2 className='text-5xl font-outfit font-semibold'>
+            <h2 className='sm:text-4xl sm:text-center lg:text-left lg:text-5xl font-outfit font-semibold'>
               About Our Mission
             </h2>
-            <p className='text-xl font-poppins text-gray-700'>
+            <p className='sm:text-lg lg:text-xl font-outfit text-gray-700'>
               We are committed to creating a safe haven for orphans and elderly individuals who have no one to turn to. Our mission is to provide care, love, and a sense of belonging for those in need.
             </p>
-            <p className='text-xl font-poppins text-gray-700'>
+            <p className='sm:text-lg lg:text-xl font-outfit text-gray-700'>
               Through education, medical support, and engaging activities, we strive to empower our residents to live fulfilling lives. Together, we are building a brighter future, one family at a time.
             </p>
             <div className='flex gap-5'>
               <Link
-                className='p-5 bg-[#578E7E] text-white font-medium font-outfit text-2xl rounded-xl hover:bg-[#466f65] transition'
+                className='p-5 bg-[#578E7E] text-white font-medium font-outfit sm:text-lg lg:text-2xl rounded-xl hover:bg-[#466f65] transition'
                 href={"/about"}
               >
                 Learn More
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center h-auto lg:mx-32 sm:mx-10 gap-10 py-16'>
+      <section className='flex flex-col justify-center items-center h-auto lg:mx-32 sm:mx-5 gap-10 py-16'>
         <h2 className='text-4xl font-outfit font-semibold mb-10 text-center'>Our Facilities and Activities</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full'>
           <div className='flex flex-col bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
@@ -147,7 +147,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center lg:mx-32 sm:mx-10 gap-10 py-16'>
+      <section className='flex flex-col justify-center items-center h-auto lg:mx-32 sm:mx-5 gap-10 py-16'>
         <h2 className='text-4xl font-outfit font-semibold mb-10 text-center'>Voices of Gratitude</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full'>
           <div className='flex flex-col items-center bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
