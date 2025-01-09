@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center sm:h-[170vh] lg:h-[120vh] lg:mx-32 sm:mx-0'>
+      <section className='flex flex-col justify-center items-center sm:h-[150vh] lg:h-[120vh] lg:mx-32 sm:mx-0'>
         <div className='flex lg:justify-between sm:justify-center sm:flex-col lg:flex-row sm:items-center sm:gap-5 lg:gap-10 bg-[#578E7E] rounded-lg p-10'>
           <div className='flex sm:w-full lg:w-1/2'>
             <div className='flex justify-center w-full'>
@@ -63,7 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center sm:h-[150vh] lg:h-[120vh] lg:mx-32 sm:mx-5'>
+      <section className='flex flex-col justify-center items-center sm:h-[170vh] lg:h-[120vh] lg:mx-32 sm:mx-5'>
         <div className='flex lg:justify-between sm:justify-center sm:flex-col-reverse sm:items-center lg:flex-row'>
           <div className='flex flex-col sm:w-full lg:w-1/2 justify-center gap-10'>
             <h2 className='sm:text-4xl sm:text-center lg:text-left lg:text-5xl font-outfit font-semibold'>
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center h-auto lg:mx-32 sm:mx-5 gap-10 py-16'>
+      <section className='flex flex-col justify-center items-center h-auto lg:mx-32 sm:mx-5 gap-10 '>
         <h2 className='text-4xl font-outfit font-semibold mb-10 text-center'>Our Facilities and Activities</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full'>
           <div className='flex flex-col bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
