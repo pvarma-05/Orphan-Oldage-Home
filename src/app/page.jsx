@@ -6,9 +6,9 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main>
-      <section className='flex flex-col justify-center items-center h-[112vh] mx-32'>
-        <div className='flex justify-between'>
-          <div className='flex flex-col w-1/2 justify-center gap-10'>
+      <section className='flex flex-col justify-center items-center sm:h-[110vh] lg:mx-32 sm:mx-10'>
+        <div className='flex items-center lg:justify-between sm:flex-col-reverse lg:flex-row w-full'>
+          <div className='flex flex-col sm:w-full lg:w-1/2 justify-center gap-10'>
             <h1 className='text-5xl font-outfit font-semibold'>
               Caring For the Abandoned Building a Loving Home
             </h1>
@@ -26,10 +26,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center h-[112vh] mx-32'>
-        <div className='flex justify-between bg-[#578E7E] rounded-lg p-10'>
-          <div className='flex w-1/2'>
-            <div className='flex justify-start w-full'>
+      <section className='flex flex-col justify-center items-center sm:h-[100vh] lg:mx-32 sm:mx-10'>
+        <div className='flex lg:justify-between sm:justify-center sm:flex-col lg:flex-row sm:items-center gap-10 bg-[#578E7E] rounded-lg p-10'>
+          <div className='flex sm:w-full lg:w-1/2'>
+            <div className='flex justify-center w-full'>
               <Image
                 width={450}
                 height={450}
@@ -40,9 +40,9 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='flex flex-col w-1/2 justify-center gap-8 text-white'>
-            <h2 className='text-4xl font-outfit font-semibold'>Meet Our Founder</h2>
-            <p className='text-lg font-poppins'>
+          <div className='flex flex-col sm:w-full lg:w-1/2 justify-center gap-8 text-white'>
+            <h2 className='lg:text-4xl sm:text-xl font-outfit font-semibold'>Meet Our Founder</h2>
+            <p className='lg:text-lg sm:text-base font-poppins'>
               Our founder, [Founder’s Name], envisioned a sanctuary where orphans and the elderly could find solace, care, and love.
               Inspired by personal experiences and a deep sense of empathy, they started this home to create a family for those without one.
             </p>
@@ -63,9 +63,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center h-[112vh] mx-32'>
-        <div className='flex justify-between'>
-          <div className='flex flex-col w-1/2 justify-center gap-10'>
+      <section className='flex flex-col justify-center items-center sm:h-[100vh] lg:mx-32 sm:mx-10'>
+        <div className='flex lg:justify-between sm:justify-center sm:flex-col-reverse sm:items-center lg:flex-row'>
+          <div className='flex flex-col sm:w-full lg:w-1/2 justify-center gap-10'>
             <h2 className='text-5xl font-outfit font-semibold'>
               About Our Mission
             </h2>
@@ -84,7 +84,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className='flex w-1/2'>
+          <div className='flex sm:w-full lg:w-1/2'>
             <div className='flex justify-end w-full'>
               <Image
                 width={700}
@@ -99,48 +99,47 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center h-[112vh] mx-32 gap-10'>
-        <h2 className='text-4xl font-outfit font-semibold mb-10'>Our Facilities and Activities</h2>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mx-32 w-full'>
-          <div className='flex flex-col items-left bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
+      <section className='flex flex-col justify-center items-center h-auto lg:mx-32 sm:mx-10 gap-10 py-16'>
+        <h2 className='text-4xl font-outfit font-semibold mb-10 text-center'>Our Facilities and Activities</h2>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full'>
+          <div className='flex flex-col bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
             <Image
-              width={300}
-              height={200}
+              width={400}
+              height={300}
               alt='Comfortable Living Spaces'
               src={"/facility-living.jpg"}
-              className='rounded-lg mb-5'
+              className='rounded-lg mb-5 object-cover'
               draggable={false}
             />
-            <h3 className='text-2xl font-outfit font-semibold mb-3'>Comfortable Living Spaces</h3>
-            <p className='text-gray-200 font-outfit '>
+            <h3 className='text-xl font-semibold mb-3 font-outfit'>Comfortable Living Spaces</h3>
+            <p className='text-gray-200 font-outfit'>
               We provide clean, safe, and comfortable living accommodations designed to offer a homely environment for our residents.
             </p>
           </div>
-          <div className='flex flex-col items-left bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
+          <div className='flex flex-col bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
             <Image
-              width={300}
-              height={200}
+              width={400}
+              height={300}
               alt='Recreational Areas'
               src={"/facility-recreation.jpg"}
-              className='rounded-lg mb-5'
+              className='rounded-lg mb-5 object-cover'
               draggable={false}
             />
-            <h3 className='text-2xl font-semibold font-outfit mb-3'>Recreational Areas</h3>
-            <br />
+            <h3 className='text-xl font-semibold mb-3 font-outfit'>Recreational Areas</h3>
             <p className='text-gray-200 font-outfit'>
               Our home features dedicated recreational spaces where residents can relax, play games, and enjoy social activities.
             </p>
           </div>
-          <div className='flex flex-col items-left bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
+          <div className='flex flex-col bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
             <Image
-              width={300}
-              height={200}
+              width={400}
+              height={300}
               alt='Nutritious Meals and Medical Care'
               src={"/facility-meals.jpg"}
-              className='rounded-lg mb-5'
+              className='rounded-lg mb-5 object-cover'
               draggable={false}
             />
-            <h3 className='text-2xl font-semibold mb-3 font-outfit'>Nutritious & Medical Care</h3>
+            <h3 className='text-xl font-semibold mb-3 font-outfit'>Nutritious & Medical Care</h3>
             <p className='text-gray-200 font-outfit'>
               We ensure the health and well-being of our residents with daily nutritious meals and regular medical checkups.
             </p>
@@ -148,30 +147,30 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center h-[100vh] mx-32 gap-10'>
-        <h2 className='text-4xl font-outfit font-semibold mb-10'>Voices of Gratitude</h2>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mx-32 w-full'>
+      <section className='flex flex-col justify-center items-center lg:mx-32 sm:mx-10 gap-10 py-16'>
+        <h2 className='text-4xl font-outfit font-semibold mb-10 text-center'>Voices of Gratitude</h2>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full'>
           <div className='flex flex-col items-center bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
             <Image
-              width={100}
-              height={100}
+              width={120}
+              height={120}
               alt='Testimonial 1'
               src={"/resident-1.jpg"}
-              className='rounded-full mb-5'
+              className='rounded-full mb-5 object-cover'
               draggable={false}
             />
-            <p className=' italic text-center mb-4 font-outfit'>
+            <p className='italic text-center mb-4 font-outfit'>
               "This home gave me the family I always longed for."
             </p>
             <h4 className='text-lg font-semibold font-outfit'>– Sarah, Resident</h4>
           </div>
           <div className='flex flex-col items-center bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
             <Image
-              width={100}
-              height={100}
+              width={120}
+              height={120}
               alt='Testimonial 2'
               src={"/donor-1.jpg"}
-              className='rounded-full mb-5'
+              className='rounded-full mb-5 object-cover'
               draggable={false}
             />
             <p className='italic text-center mb-4 font-outfit'>
@@ -181,20 +180,21 @@ export default function Home() {
           </div>
           <div className='flex flex-col items-center bg-[#578E7E] text-white p-6 rounded-lg shadow-lg'>
             <Image
-              width={100}
-              height={100}
+              width={120}
+              height={120}
               alt='Testimonial 3'
               src={"/resident-2.jpg"}
-              className='rounded-full mb-5'
+              className='rounded-full mb-5 object-cover'
               draggable={false}
             />
-            <p className=' font-outfit italic text-center mb-4'>
+            <p className='italic text-center mb-4 font-outfit'>
               "I have found love, care, and a sense of belonging here."
             </p>
             <h4 className='text-lg font-semibold font-outfit'>– Anita, Resident</h4>
           </div>
         </div>
       </section>
+
 
     </main>
   )

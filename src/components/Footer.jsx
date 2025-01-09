@@ -16,7 +16,7 @@ export default function Footer() {
     return (
         <main className='flex h-[12vh] w-full bg-[#578E7E]'>
             <div className='flex justify-center items-center w-full mx-32'>
-                <h1 className='text-white text-2xl font-outfit font-semibold'>Copyright © 2024. All rights are reserved</h1>
+                <h1 className='text-white sm:text-lg lg:text-2xl font-outfit font-semibold'>Copyright © 2024. All rights are reserved</h1>
             </div>
         </main>
     )
