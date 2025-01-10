@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main>
-      <section className='flex flex-col justify-center items-center sm:h-[110vh] lg:mx-32 sm:mx-5'>
+      <section className='flex flex-col justify-center items-center sm:h-[120vh] lg:mx-32 sm:mx-5'>
         <div className='flex items-center lg:justify-between sm:flex-col-reverse lg:flex-row w-full'>
           <div className='flex flex-col sm:w-full lg:w-1/2 justify-center sm:gap-5 lg:gap-10'>
             <h1 className='sm:text-3xl lg:text-5xl font-outfit font-semibold'>
@@ -18,7 +18,7 @@ export default function Home() {
               <Link className='p-5 bg-[#578E7E] text-white font-medium font-outfit sm:text-xl lg:text-2xl  rounded-xl hover:bg-[#466f65] transition ' href={"/donate"}>Donate Now</Link>
             </div>
           </div>
-          <div className='flex w-1/2'>
+          <div className='flex sm:w-full lg:w-1/2'>
             <div className='flex justify-end w-full'>
               <Image width={600} height={600} alt='hero' src={"/i-1.svg"} draggable={false} />
             </div>

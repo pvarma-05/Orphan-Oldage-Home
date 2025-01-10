@@ -34,7 +34,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section className='flex sm:flex-col-reverse lg:flex-row justify-center items-center sm:h-[150vh] lg:h-[112vh] sm:mx-5 lg:mx-32'>
+            <section className='flex sm:flex-col-reverse lg:flex-row justify-center items-center sm:h-[150vh] lg:h-[110vh] sm:mx-5 lg:mx-32'>
                 <div className='flex flex-col justify-center gap-10 sm:w-full lg:w-1/2'>
                     <div className='flex flex-col gap-10'>
                         <h2 className="text-4xl font-semibold font-outfit">Vision, Mission, Values</h2>

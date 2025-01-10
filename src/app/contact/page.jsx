@@ -48,7 +48,7 @@ export default function Contact() {
                     </div>
                 </div>
             </section>
-            <section className="flex flex-col justify-center items-center sm:h-[120vh] lg:h-[90vh] sm:mx-10 lg:mx-32 gap-10">
+            <section className="flex flex-col justify-center items-center sm:h-[100vh] lg:h-[90vh] sm:mx-10 lg:mx-32 gap-10">
                 <h2 className="sm:text-2xl lg:text-4xl font-semibold font-outfit mb-6">Find Us Here</h2>
                 <div className="w-full h-[500px]">
                     <iframe

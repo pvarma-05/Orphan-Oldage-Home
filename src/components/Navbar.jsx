@@ -20,7 +20,7 @@ export default function Navbar() {
     };
 
     return (
-        <main className='flex h-[12vh] w-full bg-[#578E7E] fixed z-50'>
+        <main className='flex h-[88px] w-full bg-[#578E7E] fixed z-50'>
             <div className='flex justify-between items-center w-full sm:mx-10 md:mx-32'>
                 {/* Logo Section */}
                 <div className='flex items-center gap-3'>
