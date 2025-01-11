@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main>
-      <section className='flex flex-col justify-center items-center sm:h-[120vh] lg:mx-32 sm:mx-5'>
+      <section className='flex flex-col justify-center items-center sm:h-[112vh] lg:h-[120vh] lg:mx-32 sm:mx-5'>
         <div className='flex items-center lg:justify-between sm:flex-col-reverse lg:flex-row w-full'>
           <div className='flex flex-col sm:w-full lg:w-1/2 justify-center sm:gap-5 lg:gap-10'>
             <h1 className='sm:text-3xl lg:text-5xl font-outfit font-semibold'>
@@ -19,14 +19,14 @@ export default function Home() {
             </div>
           </div>
           <div className='flex sm:w-full lg:w-1/2'>
-            <div className='flex justify-end w-full'>
+            <div className='flex sm:justify-center lg:justify-end w-full'>
               <Image width={600} height={600} alt='hero' src={"/i-1.svg"} draggable={false} />
             </div>
           </div>
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center sm:h-[150vh] lg:h-[120vh] lg:mx-32 sm:mx-0'>
+      <section className='flex flex-col justify-center items-center sm:h-[110vh] lg:h-[120vh] lg:mx-32 sm:mx-0'>
         <div className='flex lg:justify-between sm:justify-center sm:flex-col lg:flex-row sm:items-center sm:gap-5 lg:gap-10 bg-[#578E7E] rounded-lg p-10'>
           <div className='flex sm:w-full lg:w-1/2'>
             <div className='flex justify-center w-full'>
@@ -63,7 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center sm:h-[170vh] lg:h-[120vh] lg:mx-32 sm:mx-5'>
+      <section className='flex flex-col justify-center items-center sm:h-[120vh] lg:h-[120vh] lg:mx-32 sm:mx-5'>
         <div className='flex lg:justify-between sm:justify-center sm:flex-col-reverse sm:items-center lg:flex-row'>
           <div className='flex flex-col sm:w-full lg:w-1/2 justify-center gap-10'>
             <h2 className='sm:text-4xl sm:text-center lg:text-left lg:text-5xl font-outfit font-semibold'>
@@ -85,10 +85,10 @@ export default function Home() {
             </div>
           </div>
           <div className='flex sm:w-full lg:w-1/2'>
-            <div className='flex justify-end w-full'>
+            <div className='flex sm:justify-center lg:justify-end w-full'>
               <Image
-                width={700}
-                height={700}
+                width={600}
+                height={600}
                 alt='About Us'
                 src={"/i-2.svg"}
                 draggable={false}

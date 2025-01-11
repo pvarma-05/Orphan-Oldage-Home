@@ -20,7 +20,7 @@ module.exports = {
       }
     },
     screens: {
-      'sm': '375px',
+      'sm': '344px',
       'md': '768px',
       'lg': '1024px',
     },

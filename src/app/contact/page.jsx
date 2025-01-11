@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Contact() {
     return (
         <main>
-            <section className="flex flex-col justify-center items-center sm:h-[175vh] lg:h-[130vh] sm:mx-10 lg:mx-32">
+            <section className="flex flex-col justify-center items-center sm:h-[130vh] lg:h-[130vh] sm:mx-10 lg:mx-32">
                 <div className="flex flex-col justify-center gap-10 w-full">
                     <div className="flex flex-col justify-center items-center gap-7">
                         <h1 className="sm:text-3xl lg:text-5xl font-outfit font-semibold">Contact Us</h1>
@@ -15,7 +15,7 @@ export default function Contact() {
                     </div>
                     <div className="flex sm:justify-center sm:flex-col lg:flex-row lg:justify-between items-center gap-10 w-full">
                         <div className="flex lg:w-1/2 sm:w-full">
-                            <div className="flex justify-start w-full">
+                            <div className="flex sm:justify-center lg:justify-start w-full">
                                 <Image width={600} height={600} alt="Contact Illustration" src={"/i-4.svg"} draggable={false} />
                             </div>
                         </div>
@@ -48,7 +48,7 @@ export default function Contact() {
                     </div>
                 </div>
             </section>
-            <section className="flex flex-col justify-center items-center sm:h-[100vh] lg:h-[90vh] sm:mx-10 lg:mx-32 gap-10">
+            <section className="flex flex-col justify-center items-center sm:h-[90vh] lg:h-[90vh] sm:mx-10 lg:mx-32 gap-10">
                 <h2 className="sm:text-2xl lg:text-4xl font-semibold font-outfit mb-6">Find Us Here</h2>
                 <div className="w-full h-[500px]">
                     <iframe

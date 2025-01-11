@@ -68,7 +68,7 @@ export default function Donate() {
     };
     return (
         <main>
-            <section className="flex flex-col justify-center items-center sm:h-[110vh] lg:h-[112vh] sm:mx-10 lg:mx-32">
+            <section className="flex flex-col justify-center items-center sm:h-[80vh] lg:h-[112vh] sm:mx-10 lg:mx-32">
                 <div className="flex sm:flex-col-reverse lg:flex-row sm:justify-center lg:justify-between w-full gap-5">
                     <div className="flex flex-col justify-center items-center lg:items-start sm:w-full lg:w-1/2 gap-10">
                         <h1 className="sm:text-3xl lg:text-5xl sm:w-full font-outfit font-semibold">
@@ -97,7 +97,7 @@ export default function Donate() {
                 </div>
             </section>
 
-            <section className="flex flex-col justify-center gap-16 items-center lg:h-[112vh] sm:mx-10 lg:mx-32">
+            <section className="flex flex-col justify-center gap-16 items-center  lg:h-[112vh] sm:mx-10 lg:mx-32">
                 <div className="flex flex-col items-center w-full gap-6">
                     <h2 className="sm:text-2xl lg:text-4xl font-outfit font-semibold">Why Donate?</h2>
                     <p className="sm:text-base sm:text-left lg:text-center lg:text-lg font-poppins text-gray-700 text-center leading-relaxed max-w-3xl">
