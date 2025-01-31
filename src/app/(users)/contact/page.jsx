@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Contact() {
     return (
@@ -24,24 +25,43 @@ export default function Contact() {
                                 <div className="bg-[#578E7E] text-white p-6 rounded-lg shadow-lg">
                                     <h2 className="sm:text-xl lg:text-2xl font-semibold font-outfit mb-2">Address</h2>
                                     <p className="sm:text-base lg:text-lg font-poppins">
-                                        123 Compassionate Lane,<br />
-                                        Hope City, Kindness State,<br />
-                                        ZIP Code 56789
+                                        Orphan old age home, Kondampeta,<br />
+                                        Rajam, Vizianagaram District,<br />
+                                        Andhra Pradesh, Zip Code 532127
+
                                     </p>
                                 </div>
                                 <div className="bg-[#ccddd8] text-black p-6 rounded-lg shadow-lg">
                                     <h2 className="sm:text-xl lg:text-2xl font-semibold font-outfit mb-2">Phone</h2>
-                                    <p className="sm:text-base lg:text-lg font-poppins">
-                                        +1 (234) 567-8901<br />
-                                        +1 (234) 567-8902
-                                    </p>
+                                    <Link
+                                        href={"tel:+91701313185"}
+                                        className='sm:text-base lg:text-lg font-poppins'
+                                    >
+                                        +91-701313185 (Whatsapp)
+                                    </Link>
+                                    <br />
+                                    <Link
+                                        href={"tel:+919885401578"}
+                                        className='sm:text-base lg:text-lg font-poppins'
+                                    >
+                                        +91-9885401578 (Phonepay)
+                                    </Link>
                                 </div>
                                 <div className="bg-[#466f65] text-white p-6 rounded-lg shadow-lg">
                                     <h2 className="sm:text-xl lg:text-2xl font-semibold font-outfit mb-2">Mail</h2>
-                                    <p className="sm:text-sm lg:text-lg font-poppins">
-                                        contact@orphanoldagehome.org<br />
-                                        support@orphanoldagehome.org
-                                    </p>
+                                    <Link
+                                        href={"mailto:srinivas_p72@yahoo.com"}
+                                        className='sm:text-sm lg:text-lg font-poppins'
+                                    >
+                                        srinivas_p72@yahoo.com
+                                    </Link>
+                                    <br />
+                                    <Link
+                                        href={"mailto:gptower14@gmail.com"}
+                                        className='sm:text-sm lg:text-lg font-poppins'
+                                    >
+                                        gptower14@gmail.com
+                                    </Link>
                                 </div>
                             </div>
                         </div>
