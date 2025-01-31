@@ -37,7 +37,7 @@ export default function Contact() {
                                         href={"tel:+91701313185"}
                                         className='sm:text-base lg:text-lg font-poppins'
                                     >
-                                        +91-701313185 (Whatsapp)
+                                        +91-7013131858 (Whatsapp)
                                     </Link>
                                     <br />
                                     <Link
