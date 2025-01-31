@@ -34,7 +34,7 @@ export default function Contact() {
                                 <div className="bg-[#ccddd8] text-black p-6 rounded-lg shadow-lg">
                                     <h2 className="sm:text-xl lg:text-2xl font-semibold font-outfit mb-2">Phone</h2>
                                     <Link
-                                        href={"tel:+91701313185"}
+                                        href={"tel:+917013131858"}
                                         className='sm:text-base lg:text-lg font-poppins'
                                     >
                                         +91-7013131858 (Whatsapp)
