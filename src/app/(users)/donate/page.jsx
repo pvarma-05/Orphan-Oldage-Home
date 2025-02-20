@@ -77,7 +77,7 @@ export default function Donate() {
                         <p className="sm:text-base lg:text-lg font-poppins text-gray-700 leading-relaxed">
                             Every donation you make brings hope, education, and support to those in need. Together, we can build a better future for orphans and the elderly. Your kindness makes an immeasurable difference.
                         </p>
-                        <button className="bg-[#578E7E] text-white px-8 py-3 rounded-lg font-poppins sm:text-base lg:text-lg shadow-md hover:bg-[#466f65] transition"
+                        <button className='p-5 bg-[#578E7E] text-white font-medium font-outfit sm:text-xl lg:text-2xl  rounded-xl hover:bg-[#466f65] transition '
                         onClick={handlePayment}
                         >
                             Donate Now
