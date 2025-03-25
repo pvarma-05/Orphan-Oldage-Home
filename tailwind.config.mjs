@@ -19,11 +19,11 @@ module.exports = {
         ]
       }
     },
-    screens: {
-      'sm': '344px',
-      'md': '768px',
-      'lg': '1024px',
-    },
+    // screens: {
+    //   'sm': '344px',
+    //   'md': '768px',
+    //   'lg': '1024px',
+    // },
   },
   plugins: [
     require('tailwind-scrollbar'),

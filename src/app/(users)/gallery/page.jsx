@@ -27,17 +27,11 @@ const galleryData = {
 
 export default function Gallery() {
   const [activeTab, setActiveTab] = useState("All");
-  const [lightboxIndex, setLightboxIndex] = useState(null); // Index of the current image in the lightbox
+  const [lightboxIndex, setLightboxIndex] = useState(null);
   const images = galleryData[activeTab];
 
-  const openLightbox = (index) => {
-    setLightboxIndex(index);
-  };
-
-  const closeLightbox = () => {
-    setLightboxIndex(null);
-  };
-
+  const openLightbox = (index) => setLightboxIndex(index);
+  const closeLightbox = () => setLightboxIndex(null);
   const navigateLightbox = (direction) => {
     if (lightboxIndex !== null) {
       const newIndex = (lightboxIndex + direction + images.length) % images.length;
@@ -46,47 +40,42 @@ export default function Gallery() {
   };
 
   return (
-    <main>
-      <section className="flex flex-col items-center min-h-[100vh] gap-8 p-10">
-        {/* Header */}
-        <h1 className="text-4xl font-outfit font-semibold text-[#578E7E]">Gallery</h1>
-
-        {/* Navigation Bar */}
-        <div className="flex gap-2">
+    <main className="min-h-screen bg-[#F9F6E6] pt-24">
+      <section className="flex flex-col items-center min-h-[70vh] px-4 sm:px-6 lg:px-32 py-12">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-outfit font-semibold text-[#578E7E] mb-8">Gallery</h1>
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
           {["All", "Home", "Awards", "News"].map((tab) => (
             <button
               key={tab}
-              className={`px-4 py-2 rounded-md font-poppins font-medium ${
-                activeTab === tab ? "bg-[#578E7E] text-white" : "bg-gray-200 text-gray-800"
-              }`}
+              className={`px-4 py-2 rounded-xl font-poppins font-medium text-sm sm:text-base ${
+                activeTab === tab
+                  ? "bg-[#578E7E] text-white"
+                  : "bg-white text-[#578E7E] hover:bg-[#578E7E] hover:text-white"
+              } transition duration-300 shadow-md`}
               onClick={() => setActiveTab(tab)}
             >
               {tab}
             </button>
           ))}
         </div>
-
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
           {images.map((image, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-lg shadow-md cursor-pointer"
+              className="overflow-hidden rounded-xl shadow-md cursor-pointer"
               onClick={() => openLightbox(index)}
             >
               <Image
                 src={image.src}
                 alt={image.alt}
-                width={400}
-                height={300}
-                className="object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
+                width={300}
+                height={200}
+                className="object-cover w-full h-64 hover:scale-105 transition-transform duration-300"
                 loading="lazy"
               />
             </div>
           ))}
         </div>
-
-        {/* Lightbox */}
         {lightboxIndex !== null && (
           <div
             className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
@@ -94,10 +83,10 @@ export default function Gallery() {
           >
             <div
               className="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center"
-              onClick={(e) => e.stopPropagation()} // Prevent close when clicking on the image
+              onClick={(e) => e.stopPropagation()}
             >
               <button
-                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-[#578E7E] rounded-full p-2"
+                className="absolute top-1/2 left-2 sm:left-4 -translate-y-1/2 text-white bg-[#578E7E] rounded-full p-2 sm:p-3"
                 onClick={() => navigateLightbox(-1)}
               >
                 ←
@@ -105,12 +94,12 @@ export default function Gallery() {
               <Image
                 src={images[lightboxIndex].src}
                 alt={images[lightboxIndex].alt}
-                width={1200}
-                height={800}
+                width={800}
+                height={600}
                 className="object-contain max-w-full max-h-[85vh]"
               />
               <button
-                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-[#578E7E] rounded-full p-2"
+                className="absolute top-1/2 right-2 sm:right-4 -translate-y-1/2 text-white bg-[#578E7E] rounded-full p-2 sm:p-3"
                 onClick={() => navigateLightbox(1)}
               >
                 →
