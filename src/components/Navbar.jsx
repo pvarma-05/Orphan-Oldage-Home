@@ -29,8 +29,17 @@ export default function Navbar() {
     return () => document.removeEventListener("click", closeMenuOnClickOutside);
   }, [menuOpen]);
 
+  const fadeIn = {
+    initial: { opacity: 0, y: -20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, ease: "easeOut" },
+  };
+
   return (
-    <nav className="fixed top-0 w-full bg-[#578E7E] z-50 shadow-md">
+    <motion.nav
+      {...fadeIn}
+      className="fixed top-0 w-full bg-[#578E7E] z-50 shadow-md"
+    >
       <div className="flex items-center justify-between px-4 sm:px-6 lg:px-32 h-20">
         <div className="flex items-center gap-2 sm:gap-3">
           <Image
@@ -104,6 +113,6 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </motion.nav>
   );
 }

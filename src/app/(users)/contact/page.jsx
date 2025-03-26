@@ -2,31 +2,43 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Contact() {
+  const fadeIn = { opacity: 1, transition: { duration: 0.8 } };
+  const slideInRight = { x: 0, opacity: 1, transition: { duration: 0.8 } };
+
   return (
     <main className="min-h-screen bg-[#F9F6E6] pt-24">
       {/* Contact Info Section */}
       <section className="flex flex-col items-center justify-center min-h-[70vh] px-4 sm:px-6 lg:px-32 py-12">
         <div className="w-full max-w-6xl">
-          <div className="text-center mb-10">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={fadeIn}
+            viewport={{ once: true }}
+            className="text-center mb-10"
+          >
             <h1 className="text-2xl sm:text-3xl lg:text-5xl font-outfit font-semibold text-[#578E7E]">Contact Us</h1>
             <p className="mt-4 text-sm sm:text-base lg:text-lg font-poppins text-gray-700">
               Reach out to us—we’re here to assist you!
             </p>
-          </div>
+          </motion.div>
           <div className="flex flex-col lg:flex-row items-center gap-8">
-            <div className="w-full lg:w-1/2 flex justify-center">
-              <Image
-                src="/i-4.svg"
-                alt="Contact Illustration"
-                width={400}
-                height={400}
-                className="max-w-full h-auto"
-                draggable={false}
-              />
-            </div>
-            <div className="w-full lg:w-1/2 space-y-6">
+            <motion.div
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={slideInRight}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 flex justify-center"
+            >
+              <Image src="/i-4.svg" alt="Contact Illustration" width={400} height={400} className="max-w-full h-auto" draggable={false} />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={fadeIn}
+              viewport={{ once: true }}
+              className="w-full lg:w-1/2 space-y-6"
+            >
               <div className="bg-[#578E7E] text-white p-5 rounded-xl shadow-md">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold font-outfit mb-2">Address</h2>
                 <p className="text-sm sm:text-base lg:text-lg font-poppins">
@@ -53,19 +65,30 @@ export default function Contact() {
                   gptower14@gmail.com
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Map Section */}
       <section className="flex flex-col items-center justify-center min-h-[60vh] px-4 sm:px-6 lg:px-32 py-12">
-        <h2 className="text-xl sm:text-2xl lg:text-4xl font-semibold font-outfit text-[#578E7E] mb-6 text-center">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={fadeIn}
+          viewport={{ once: true }}
+          className="text-xl sm:text-2xl lg:text-4xl font-semibold font-outfit text-[#578E7E] mb-6 text-center"
+        >
           Find Us Here
-        </h2>
-        <div className="w-full max-w-6xl h-[300px] sm:h-[350px] lg:h-[450px] rounded-xl overflow-hidden shadow-md">
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="w-full max-w-6xl h-[300px] sm:h-[350px] lg:h-[450px] rounded-xl overflow-hidden shadow-md"
+        >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3784.665907831098!2d83.65124999999999!3d18.453472199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDI3JzEyLjUiTiA4M8KwMzknMDQuNSJF!5e0!3m2!1sen!2sin!4v1736361039540!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3784.665907831098!2d83.65124999999999!3d18.453472199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDI3JzEyLjUiNiA4M8KwMzknMDQuNSJF!5e0!3m2!1sen!2sin!4v1736361039540!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -73,7 +96,7 @@ export default function Contact() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-        </div>
+        </motion.div>
       </section>
     </main>
   );
