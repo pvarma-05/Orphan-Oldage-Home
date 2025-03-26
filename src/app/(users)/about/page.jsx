@@ -106,7 +106,7 @@ export default function About() {
           <p className="text-sm sm:text-base lg:text-lg font-poppins text-gray-700 max-w-2xl">
             Your support brings hope and happiness to those in need.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-8">
             <motion.div {...buttonHover}>
               <Link href="/donate" className="px-6 py-3 bg-[#578E7E] text-white font-medium font-outfit text-lg rounded-xl hover:bg-[#466f65] transition duration-300">
                 Donate Now
